@@ -1,4 +1,4 @@
-<img align="right" style="margin: 16px;" width="500" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/>
+<img align="right" style="margin: 16px;" width="300" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/>
 
 # Kostenverdeling
 Applicatie die kostenverdeling faciliteert.
