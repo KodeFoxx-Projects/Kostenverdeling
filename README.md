@@ -1,5 +1,5 @@
-<span align="right">[![Build status](https://ci.appveyor.com/api/projects/status/j1127clj369e516o/branch/master?svg=true)](https://ci.appveyor.com/project/aredfox/kostenverdeling/branch/master)</span>
 <img align="right" style="margin: 16px;" width="300" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/>
+<span align="right" style="float: right !important;" >[![Build status](https://ci.appveyor.com/api/projects/status/j1127clj369e516o/branch/master?svg=true)](https://ci.appveyor.com/project/aredfox/kostenverdeling/branch/master)</span>
 
 # Kostenverdeling
 Applicatie die kostenverdeling faciliteert. <br/>Maintained by Yves Schelpe for KodeFoxx. For **issues, errors or feature requests**, please **create <a href="https://github.com/KodeFoxx-Projects/Kostenverdeling/issues/new">a message here</a>**.
