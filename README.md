@@ -1,4 +1,6 @@
 # Kostenverdeling
 Applicatie die kostenverdeling faciliteert.
 
-- Downloads & releases: https://github.com/KodeFoxx-Projects/Kostenverdeling/releases/
+## Downloads & releases: 
+  - [Meest recente release](https://github.com/KodeFoxx-Projects/Kostenverdeling/releases/latest)
+  - [Alle releases](https://github.com/KodeFoxx-Projects/Kostenverdeling/releases/)
