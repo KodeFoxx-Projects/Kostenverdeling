@@ -41,8 +41,8 @@
             // 
             this.___contentBody.Controls.Add(this.uxWizardStepViewHost);
             this.___contentBody.Controls.Add(this.uxWizardStepTitle);
-            this.___contentBody.Margin = new System.Windows.Forms.Padding(5);
-            this.___contentBody.Size = new System.Drawing.Size(1006, 526);
+            this.___contentBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.___contentBody.Size = new System.Drawing.Size(756, 427);
             // 
             // ___footerBody
             // 
@@ -51,13 +51,17 @@
             this.___footerBody.Controls.Add(this.uxCancel);
             this.___footerBody.Controls.Add(this.uxWizardPrevious);
             this.___footerBody.Controls.Add(this.uxWizardNext);
-            this.___footerBody.Location = new System.Drawing.Point(0, 616);
-            this.___footerBody.Margin = new System.Windows.Forms.Padding(5);
-            this.___footerBody.Size = new System.Drawing.Size(1028, 62);
+            this.___footerBody.Location = new System.Drawing.Point(0, 501);
+            this.___footerBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.___footerBody.Size = new System.Drawing.Size(772, 50);
+            // 
+            // __applicationName
+            // 
+            this.@__applicationName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             // 
             // ___headerBar
             // 
-            this.___headerBar.Size = new System.Drawing.Size(1028, 66);
+            this.___headerBar.Size = new System.Drawing.Size(772, 54);
             // 
             // uxWizardStepTitle
             // 
@@ -65,26 +69,23 @@
             this.uxWizardStepTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.uxWizardStepTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxWizardStepTitle.Location = new System.Drawing.Point(0, 0);
-            this.uxWizardStepTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.uxWizardStepTitle.Name = "uxWizardStepTitle";
-            this.uxWizardStepTitle.Size = new System.Drawing.Size(199, 25);
+            this.uxWizardStepTitle.Size = new System.Drawing.Size(162, 20);
             this.uxWizardStepTitle.TabIndex = 0;
             this.uxWizardStepTitle.Text = "%wizardStepTitle%";
             // 
             // uxWizardStepViewHost
             // 
-            this.uxWizardStepViewHost.Location = new System.Drawing.Point(5, 28);
-            this.uxWizardStepViewHost.Margin = new System.Windows.Forms.Padding(4);
+            this.uxWizardStepViewHost.Location = new System.Drawing.Point(4, 23);
             this.uxWizardStepViewHost.Name = "uxWizardStepViewHost";
-            this.uxWizardStepViewHost.Size = new System.Drawing.Size(1000, 492);
+            this.uxWizardStepViewHost.Size = new System.Drawing.Size(750, 400);
             this.uxWizardStepViewHost.TabIndex = 1;
             // 
             // uxWizardNext
             // 
-            this.uxWizardNext.Location = new System.Drawing.Point(916, 18);
-            this.uxWizardNext.Margin = new System.Windows.Forms.Padding(4);
+            this.uxWizardNext.Location = new System.Drawing.Point(687, 15);
             this.uxWizardNext.Name = "uxWizardNext";
-            this.uxWizardNext.Size = new System.Drawing.Size(100, 28);
+            this.uxWizardNext.Size = new System.Drawing.Size(75, 23);
             this.uxWizardNext.TabIndex = 0;
             this.uxWizardNext.Text = "Volgende >";
             this.uxWizardNext.UseVisualStyleBackColor = true;
@@ -92,10 +93,9 @@
             // 
             // uxWizardPrevious
             // 
-            this.uxWizardPrevious.Location = new System.Drawing.Point(808, 18);
-            this.uxWizardPrevious.Margin = new System.Windows.Forms.Padding(4);
+            this.uxWizardPrevious.Location = new System.Drawing.Point(606, 15);
             this.uxWizardPrevious.Name = "uxWizardPrevious";
-            this.uxWizardPrevious.Size = new System.Drawing.Size(100, 28);
+            this.uxWizardPrevious.Size = new System.Drawing.Size(75, 23);
             this.uxWizardPrevious.TabIndex = 1;
             this.uxWizardPrevious.Text = "< Vorige";
             this.uxWizardPrevious.UseVisualStyleBackColor = true;
@@ -103,10 +103,9 @@
             // 
             // uxCancel
             // 
-            this.uxCancel.Location = new System.Drawing.Point(21, 18);
-            this.uxCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.uxCancel.Location = new System.Drawing.Point(16, 15);
             this.uxCancel.Name = "uxCancel";
-            this.uxCancel.Size = new System.Drawing.Size(100, 28);
+            this.uxCancel.Size = new System.Drawing.Size(75, 23);
             this.uxCancel.TabIndex = 2;
             this.uxCancel.Text = "Afsluiten";
             this.uxCancel.UseVisualStyleBackColor = true;
@@ -114,10 +113,9 @@
             // 
             // uxReset
             // 
-            this.uxReset.Location = new System.Drawing.Point(646, 18);
-            this.uxReset.Margin = new System.Windows.Forms.Padding(4);
+            this.uxReset.Location = new System.Drawing.Point(484, 15);
             this.uxReset.Name = "uxReset";
-            this.uxReset.Size = new System.Drawing.Size(146, 28);
+            this.uxReset.Size = new System.Drawing.Size(110, 23);
             this.uxReset.TabIndex = 3;
             this.uxReset.Text = "Opnieuw beginnen";
             this.uxReset.UseVisualStyleBackColor = true;
@@ -136,10 +134,9 @@
             // 
             // uxConfig
             // 
-            this.uxConfig.Location = new System.Drawing.Point(512, 18);
-            this.uxConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.uxConfig.Location = new System.Drawing.Point(384, 15);
             this.uxConfig.Name = "uxConfig";
-            this.uxConfig.Size = new System.Drawing.Size(118, 28);
+            this.uxConfig.Size = new System.Drawing.Size(88, 23);
             this.uxConfig.TabIndex = 4;
             this.uxConfig.Text = "Instellingen...";
             this.uxConfig.UseVisualStyleBackColor = true;
@@ -147,15 +144,15 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 678);
+            this.ClientSize = new System.Drawing.Size(772, 551);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1046, 772);
-            this.MinimumSize = new System.Drawing.Size(1046, 715);
+            this.MaximumSize = new System.Drawing.Size(788, 635);
+            this.MinimumSize = new System.Drawing.Size(788, 588);
             this.Name = "Main";
             this.Text = " Verdeling Facturatie [ Elegast vzw ] - v%version%";
             this.___contentBody.ResumeLayout(false);

@@ -233,7 +233,7 @@ namespace Kostenverdeling.Model.DataExport
                         ws.Cells[$"C{lineCounter}"].Style.VerticalAlignment = ExcelVerticalAlignment.Bottom;
                         ws.Cells[$"C{lineCounter}"].Value = "TOTAAL van Projecten + BJB";
                         ws.Cells[$"C{lineCounter}:E{lineCounter}"].Style.Font.Bold = true;
-                        ws.Cells[$"E{lineCounter}"].Formula = $"={String.Join("+", totalsFormula.ToArray())}";
+                        ws.Cells[$"E{lineCounter}"].Formula = $"={String.Join("+", totalsFormula.ToArray())}+E{lineCounter-1}";
                         ws.Cells[$"E{lineCounter}"].Style.Numberformat.Format = "#,##0.00";
                         lineCounter++;
 
