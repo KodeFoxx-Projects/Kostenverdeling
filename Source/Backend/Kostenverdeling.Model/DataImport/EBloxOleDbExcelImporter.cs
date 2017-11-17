@@ -81,6 +81,7 @@ namespace Kostenverdeling.Model.DataImport
                 var rowCounter = 1;                
                 foreach (DataRow row in table.Rows) {                    
                     try {
+                        var departmentId = row[2].ToString();
                         var department = _businessDepartmentRepository.GetDepartment(Int32.Parse(row[2].ToString()));
                         if (department == null) {
                             department = _businessDepartmentRepository.GetOrAddUnknownDepartment(Int32.Parse(row[2].ToString()), $"NAAMLOOS-{Int32.Parse(row[2].ToString())}");
