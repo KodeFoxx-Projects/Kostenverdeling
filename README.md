@@ -1,7 +1,7 @@
 <img align="right" style="margin: 16px;" width="300" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/>
 
 # Kostenverdeling
-Applicatie die kostenverdeling faciliteert.
+Applicatie die kostenverdeling faciliteert. <br/>Maintained by Yves Schelpe for KodeFoxx. For **issues, errors or feature requests**, please **create <a href="https://github.com/KodeFoxx-Projects/Kostenverdeling/issues/new">a message here</a>**.
 
 ## Downloads & releases: 
   - [Recenste stabiele release](https://github.com/KodeFoxx-Projects/Kostenverdeling/releases/latest)
@@ -11,7 +11,3 @@ Applicatie die kostenverdeling faciliteert.
 Build status | Test status
 --- | --- 
 [![Build status](https://ci.appveyor.com/api/projects/status/j1127clj369e516o/branch/master?svg=true)](https://ci.appveyor.com/project/aredfox/kostenverdeling/branch/master) | [![Test status](http://flauschig.ch/batch.php?type=tests&account=aredfox&slug=kostenverdeling)](https://ci.appveyor.com/project/aredfox/kostenverdeling/build/tests)
-
----
-Programmed by Yves Schelpe for KodeFoxx. For **issues, errors or feature requests**, please **create <a href="https://github.com/KodeFoxx-Projects/Kostenverdeling/issues/new">a message here</a>**.
-<a href="mailto:yves.schelpe@gmail.com"><img align="right" style="margin: 16px;" width="300" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/></a>
