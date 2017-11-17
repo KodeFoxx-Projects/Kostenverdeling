@@ -1,3 +1,4 @@
+<span align="right">[![Build status](https://ci.appveyor.com/api/projects/status/j1127clj369e516o/branch/master?svg=true)](https://ci.appveyor.com/project/aredfox/kostenverdeling/branch/master)</span>
 <img align="right" style="margin: 16px;" width="300" src="https://image.ibb.co/nxA5TR/kodefoxx_colors_projects_yvesschelpecontact.png"/>
 
 # Kostenverdeling
