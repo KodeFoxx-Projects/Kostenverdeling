@@ -1,0 +1,95 @@
+﻿{
+  "ManagementCosts": {
+    "Name": "Beheerskosten inclusief BTW",
+    "Codes": [
+      "509*"
+    ],
+    "CodesToIgnore": [],
+    "TaxMultiplier": 0.21,
+    "IncludeInExcelReport": true,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": true
+  },
+
+  "SocialSecurity": {
+    "Name": "RSZ",
+    "Codes": [
+      "250*",
+      "254*",
+      "280*",
+      "362*",
+      "365*",
+      "501*",
+      "502*",
+      "503*",
+      "510*",
+      "555*",
+      "577*",
+      "580*",
+      "588*",
+      "589*",
+      "2580",
+      "565*"
+    ],
+    "CodesToIngore": [],
+    "TaxMultiplier": 0,
+    "IncludeInExcelReport": true,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": true
+  },
+
+  "SocialSecurityProvision": {
+    "Name": "Provisie RSZ",
+    "Codes": [
+      "571"
+    ],
+    "CodesToIngore": [],
+    "TaxMultiplier": 0,
+    "IncludeInExcelReport": false,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": true
+  },
+
+  "AdvanceTaxPayment": {
+    "Name": "Bedrijfsvoorheffing",
+    "Codes": [
+      "3500",
+      "3510",
+      "3520",
+      "3540",
+      "3570",
+      "3580",
+      "3702",
+      "4080"
+    ],
+    "CodesToIngore": [],
+    "TaxMultiplier": 0,
+    "IncludeInExcelReport": true,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": true
+  },
+
+  "WageGarnishmentManagement": {
+    "Name": "Beheer voor loonbeslag",
+    "Codes": [
+      "5094"
+    ],
+    "CodesToIngore": [],
+    "TaxMultiplier": 0.21,
+    "IncludeInExcelReport": false,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": false
+  },
+
+  "WageGarnishment": {
+    "Name": "Loonbeslag",
+    "Codes": [
+      "385*"
+    ],
+    "CodesToIngore": [],
+    "TaxMultiplier": 0,
+    "IncludeInExcelReport": true,
+    "IncludeInTotalsExcelReport": false,
+    "IncludeInExcelDetailReport": true
+  }
+}

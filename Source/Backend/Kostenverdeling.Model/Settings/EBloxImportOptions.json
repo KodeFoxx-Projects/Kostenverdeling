@@ -1,0 +1,283 @@
+﻿{
+  "Departments": [
+    {
+      "Id": "0002392",
+      "Name": "Elegast vzw",
+      "Divisions": [
+        {
+          "Ids": [ "4400", "4800" ],
+          "Name": "BJB",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/4400/06"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "4400/06"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "4600" ],
+          "Name": "GEM",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/4600/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "4600/01"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "4200" ],
+          "Name": "VORSELAAR",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/4200/05"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "4200/05"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "6300" ],
+          "Name": "WAW",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/6300/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "6300/01"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "6400" ],
+          "Name": "NAFT",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/6400/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "6400/01"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "6550" ],
+          "Name": "SWAT",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/6550/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "6550/01"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "6700" ],
+          "Name": "FLITS",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/6700/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "6700/01"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "6800" ],
+          "Name": "SLIM",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/6800/01"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "6800/01"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "Id": "0002467",
+      "Name": "Elegast-Potgieter vzw",      
+      "Divisions": [
+        {
+          "Ids": [ "4300", "4800" ],
+          "Name": "BJB",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/4300/02"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "4300/02"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "5100" ],
+          "Name": "HCA",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/5100/99"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "5100/99"
+            }
+          ]
+        },
+
+        {
+          "Ids": [ "5500" ],
+          "Name": "AWS",
+          "AccountingDescriptions": [
+            {
+              "Category": "Beheerskosten inclusief BTW",
+              "Description": "616100/5500/99"
+            },
+            {
+              "Category": "RSZ",
+              "Description": "4540..."
+            },
+            {
+              "Category": "Bedrijfsvoorheffing",
+              "Description": "4530..."
+            },
+            {
+              "Category": "_totaal",
+              "Description": "5500/99"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "DepartmentsToIgnore": [
+    "4001086"
+  ],
+
+  "TypesToInclude": [
+    "B"
+  ],
+
+  "AccountingDescriptions": [
+    {
+      "Category": "_totaal_Loonbeslag",
+      "Description": "4400"
+    }
+  ]
+}

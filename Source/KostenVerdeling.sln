@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{B0990BE0-7F6B-405A-BDF9-2CD4E2B79B45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{82C0F7BD-B6E9-48E0-A1E2-DA86C691850C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestConsoleApps", "TestConsoleApps", "{19944561-AB63-49BC-9AAB-38E9E2FD776B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{562D9B6C-A696-4535-AF55-A2AFFBF0E41A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBC8FF98-89F1-492A-A2BF-9B59D9FC9D21}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kostenverdeling.Model", "Backend\Kostenverdeling.Model\Kostenverdeling.Model.csproj", "{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kostenverdeling.Desktop.WinFormsClient", "Frontend\Kostenverdeling.Desktop.WinFormsClient\Kostenverdeling.Desktop.WinFormsClient.csproj", "{85B22198-82DD-45A6-B6C0-48A5BC12FC7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kostenverdeling.ExcelImportConsoleTester", "Frontend\TestConsoleApps\Kostenverdeling.Model.ExcelImportConsoleTester\Kostenverdeling.ExcelImportConsoleTester.csproj", "{BD98C610-E4D8-424B-B00B-84C02583A961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B22198-82DD-45A6-B6C0-48A5BC12FC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B22198-82DD-45A6-B6C0-48A5BC12FC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B22198-82DD-45A6-B6C0-48A5BC12FC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B22198-82DD-45A6-B6C0-48A5BC12FC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD98C610-E4D8-424B-B00B-84C02583A961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD98C610-E4D8-424B-B00B-84C02583A961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD98C610-E4D8-424B-B00B-84C02583A961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD98C610-E4D8-424B-B00B-84C02583A961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19944561-AB63-49BC-9AAB-38E9E2FD776B} = {82C0F7BD-B6E9-48E0-A1E2-DA86C691850C}
+		{562D9B6C-A696-4535-AF55-A2AFFBF0E41A} = {82C0F7BD-B6E9-48E0-A1E2-DA86C691850C}
+		{163B00E3-1766-4FBE-8EDA-B59CCA1EBB2B} = {B0990BE0-7F6B-405A-BDF9-2CD4E2B79B45}
+		{85B22198-82DD-45A6-B6C0-48A5BC12FC7F} = {562D9B6C-A696-4535-AF55-A2AFFBF0E41A}
+		{BD98C610-E4D8-424B-B00B-84C02583A961} = {19944561-AB63-49BC-9AAB-38E9E2FD776B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F3438E0-6EA4-4B3F-9F93-69806E39D7CD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,150 @@
+{
+  "InvoiceSections": [
+    {
+      "Name": "Sociale bijdragen en inhoudingen",
+      "InvoiceSectionLines": [
+        {
+          "Description": "R.S.Z (KODES 250, 280, 501, 502, 588, 589)",
+          "InvoiceCode": "250",
+          "CodesToInclude": [
+            "250*",
+            "280*",
+            "501*",
+            "502*",
+            "588*",
+            "589*"
+          ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "R.S.Z. BESTAANSZEKERHEID",
+          "InvoiceCode": "510",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "PROVISIE FACTUUR RSZ",
+          "InvoiceCode": "571",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "INHOUDING OP DUBBEL VAKANTIEGELD KB.214",
+          "InvoiceCode": "254",
+          "CodesToInclude": [
+            "254*",
+            "258*"
+          ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "BIJZONDERE BIJDRAGE SOCIALE ZEKERHEID",
+          "InvoiceCode": "365",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "SOCIALE INHOUDING (PSEUDO-) BRUGPENSIOEN",
+          "InvoiceCode": "362",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "R.S.Z. SLUITING ONDERNEMINGEN",
+          "InvoiceCode": "503",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "STRUCTURELE LASTENVERMINDERING",
+          "InvoiceCode": "580",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "DOELGROEPVERMINDERING",
+          "InvoiceCode": "565",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "CO2-PATRON.SOLIDAR.BIJDRAGE BEDRIJFSWAGENS/VOERTUIGEN",
+          "InvoiceCode": "577",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "BIJZONDERE BIJDRAGE AANV. VERGOEDING BRUGPENSIOEN",
+          "InvoiceCode": "555",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "VOORHEFFING OP WERKLOOSHEID EN BRUGPENSIOEN NA ONTSLAG",
+          "InvoiceCode": "441",
+          "CodesToInclude": [ "3540" ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "VOORHEFFING WERKNEMERS",
+          "InvoiceCode": "460",
+          "CodesToInclude": [
+            "3500",
+            "3520",
+            "3570",
+            "3702",
+            "4080",
+            "3510"
+          ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "LOONBESLAG (KODES 383, 384, 358)",
+          "InvoiceCode": "383",
+          "CodesToInclude": [
+            "383*",
+            "384*",
+            "385*"
+          ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "BEHEER LOONBEREKENING",
+          "InvoiceCode": "509",
+          "CodesToInclude": [],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "SOLIDARITEITSBIJDRAGE JOBSTUDENTEN",
+          "InvoiceCode": "257",
+          "CodesToInclude": [ "2570", "5170" ],
+          "CodesToIgnore": []
+        },
+
+        {
+          "Description": "B.T.W. (TARIEF 21,00%)",
+          "InvoiceCode": "593",
+          "CodesToInclude": [ "509*" ],
+          "CodesToIgnore": [],
+          "TaxMultiplier": 0.21,
+          "IncludeOriginalValue": false
+        }
+      ]
+    }
+  ]
+}
