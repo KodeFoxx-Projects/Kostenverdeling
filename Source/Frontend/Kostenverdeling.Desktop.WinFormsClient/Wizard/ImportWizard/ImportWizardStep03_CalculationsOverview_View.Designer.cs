@@ -37,19 +37,17 @@
             // uxInfo
             // 
             this.uxInfo.Location = new System.Drawing.Point(0, 2);
-            this.uxInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.uxInfo.Name = "uxInfo";
-            this.uxInfo.Size = new System.Drawing.Size(1000, 36);
+            this.uxInfo.Size = new System.Drawing.Size(750, 29);
             this.uxInfo.TabIndex = 12;
             this.uxInfo.Text = "Overzicht van de berekeningen opgesplitst per bedrijf en project.";
             // 
             // uxTabContainer
             // 
-            this.uxTabContainer.Location = new System.Drawing.Point(4, 42);
-            this.uxTabContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxTabContainer.Location = new System.Drawing.Point(3, 34);
             this.uxTabContainer.Name = "uxTabContainer";
             this.uxTabContainer.SelectedIndex = 0;
-            this.uxTabContainer.Size = new System.Drawing.Size(992, 447);
+            this.uxTabContainer.Size = new System.Drawing.Size(744, 363);
             this.uxTabContainer.TabIndex = 13;
             this.uxTabContainer.Visible = false;
             // 
@@ -58,27 +56,26 @@
             this.uxProgressPanel.Controls.Add(this.uxProgressInfo);
             this.uxProgressPanel.Controls.Add(this.uxProgressBar);
             this.uxProgressPanel.Controls.Add(this.uxBezigMetVerwerkenGegevens);
-            this.uxProgressPanel.Location = new System.Drawing.Point(3, 42);
+            this.uxProgressPanel.Location = new System.Drawing.Point(2, 34);
+            this.uxProgressPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxProgressPanel.Name = "uxProgressPanel";
-            this.uxProgressPanel.Size = new System.Drawing.Size(986, 440);
+            this.uxProgressPanel.Size = new System.Drawing.Size(740, 358);
             this.uxProgressPanel.TabIndex = 14;
             // 
             // uxProgressInfo
             // 
             this.uxProgressInfo.AutoSize = true;
-            this.uxProgressInfo.Location = new System.Drawing.Point(13, 22);
-            this.uxProgressInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxProgressInfo.Location = new System.Drawing.Point(10, 18);
             this.uxProgressInfo.Name = "uxProgressInfo";
-            this.uxProgressInfo.Size = new System.Drawing.Size(259, 17);
+            this.uxProgressInfo.Size = new System.Drawing.Size(193, 13);
             this.uxProgressInfo.TabIndex = 16;
             this.uxProgressInfo.Text = "Bezig met berekeningen en simulaties...";
             // 
             // uxProgressBar
             // 
-            this.uxProgressBar.Location = new System.Drawing.Point(17, 42);
-            this.uxProgressBar.Margin = new System.Windows.Forms.Padding(4);
+            this.uxProgressBar.Location = new System.Drawing.Point(13, 34);
             this.uxProgressBar.Name = "uxProgressBar";
-            this.uxProgressBar.Size = new System.Drawing.Size(961, 28);
+            this.uxProgressBar.Size = new System.Drawing.Size(721, 23);
             this.uxProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.uxProgressBar.TabIndex = 15;
             // 
@@ -87,24 +84,22 @@
             this.uxBezigMetVerwerkenGegevens.AutoSize = true;
             this.uxBezigMetVerwerkenGegevens.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxBezigMetVerwerkenGegevens.Location = new System.Drawing.Point(2, 1);
-            this.uxBezigMetVerwerkenGegevens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.uxBezigMetVerwerkenGegevens.Name = "uxBezigMetVerwerkenGegevens";
-            this.uxBezigMetVerwerkenGegevens.Size = new System.Drawing.Size(113, 17);
+            this.uxBezigMetVerwerkenGegevens.Size = new System.Drawing.Size(90, 13);
             this.uxBezigMetVerwerkenGegevens.TabIndex = 14;
             this.uxBezigMetVerwerkenGegevens.Text = "Even geduld...";
             // 
             // ImportWizardStep03_CalculationsOverview_View
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.uxInfo);
             this.Controls.Add(this.uxProgressPanel);
             this.Controls.Add(this.uxTabContainer);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(1000, 492);
-            this.MinimumSize = new System.Drawing.Size(1000, 492);
+            this.MaximumSize = new System.Drawing.Size(750, 400);
+            this.MinimumSize = new System.Drawing.Size(750, 400);
             this.Name = "ImportWizardStep03_CalculationsOverview_View";
-            this.Size = new System.Drawing.Size(1000, 492);
+            this.Size = new System.Drawing.Size(750, 400);
             this.uxProgressPanel.ResumeLayout(false);
             this.uxProgressPanel.PerformLayout();
             this.ResumeLayout(false);

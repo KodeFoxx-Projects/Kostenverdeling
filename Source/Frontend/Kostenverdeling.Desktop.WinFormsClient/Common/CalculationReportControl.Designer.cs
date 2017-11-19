@@ -33,16 +33,16 @@
             this.uxSplitter = new System.Windows.Forms.Label();
             this.tabCategories = new System.Windows.Forms.TabControl();
             this.uxInvoiceNumber = new System.Windows.Forms.TextBox();
-            this.uxInvoiceNumberIgnore = new System.Windows.Forms.CheckBox();
+            this.uxTotalInvoiceAmount = new System.Windows.Forms.TextBox();
+            this.uxTotalInvoiceAmountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // uxPeriodLabel
             // 
             this.uxPeriodLabel.AutoSize = true;
-            this.uxPeriodLabel.Location = new System.Drawing.Point(4, 9);
-            this.uxPeriodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxPeriodLabel.Location = new System.Drawing.Point(3, 7);
             this.uxPeriodLabel.Name = "uxPeriodLabel";
-            this.uxPeriodLabel.Size = new System.Drawing.Size(61, 17);
+            this.uxPeriodLabel.Size = new System.Drawing.Size(46, 13);
             this.uxPeriodLabel.TabIndex = 0;
             this.uxPeriodLabel.Text = "Periode:";
             // 
@@ -50,10 +50,9 @@
             // 
             this.uxPeriod.AutoSize = true;
             this.uxPeriod.ForeColor = System.Drawing.Color.DimGray;
-            this.uxPeriod.Location = new System.Drawing.Point(63, 9);
-            this.uxPeriod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxPeriod.Location = new System.Drawing.Point(47, 7);
             this.uxPeriod.Name = "uxPeriod";
-            this.uxPeriod.Size = new System.Drawing.Size(169, 17);
+            this.uxPeriod.Size = new System.Drawing.Size(132, 13);
             this.uxPeriod.TabIndex = 1;
             this.uxPeriod.Text = "dd/mm/yyyy - dd/mm/yyyy";
             // 
@@ -61,76 +60,80 @@
             // 
             this.uxInvoiceDate.AutoSize = true;
             this.uxInvoiceDate.ForeColor = System.Drawing.Color.DimGray;
-            this.uxInvoiceDate.Location = new System.Drawing.Point(355, 9);
-            this.uxInvoiceDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxInvoiceDate.Location = new System.Drawing.Point(266, 7);
             this.uxInvoiceDate.Name = "uxInvoiceDate";
-            this.uxInvoiceDate.Size = new System.Drawing.Size(82, 17);
+            this.uxInvoiceDate.Size = new System.Drawing.Size(65, 13);
             this.uxInvoiceDate.TabIndex = 3;
             this.uxInvoiceDate.Text = "dd/mm/yyyy";
             // 
             // uxInvoiceDateLabel
             // 
             this.uxInvoiceDateLabel.AutoSize = true;
-            this.uxInvoiceDateLabel.Location = new System.Drawing.Point(257, 9);
-            this.uxInvoiceDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxInvoiceDateLabel.Location = new System.Drawing.Point(193, 7);
             this.uxInvoiceDateLabel.Name = "uxInvoiceDateLabel";
-            this.uxInvoiceDateLabel.Size = new System.Drawing.Size(99, 17);
+            this.uxInvoiceDateLabel.Size = new System.Drawing.Size(75, 13);
             this.uxInvoiceDateLabel.TabIndex = 2;
             this.uxInvoiceDateLabel.Text = "Factuurdatum:";
             // 
             // uxInvoiceNumberLabel
             // 
             this.uxInvoiceNumberLabel.AutoSize = true;
-            this.uxInvoiceNumberLabel.Location = new System.Drawing.Point(460, 9);
-            this.uxInvoiceNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxInvoiceNumberLabel.Location = new System.Drawing.Point(345, 7);
             this.uxInvoiceNumberLabel.Name = "uxInvoiceNumberLabel";
-            this.uxInvoiceNumberLabel.Size = new System.Drawing.Size(111, 17);
+            this.uxInvoiceNumberLabel.Size = new System.Drawing.Size(83, 13);
             this.uxInvoiceNumberLabel.TabIndex = 4;
             this.uxInvoiceNumberLabel.Text = "Factuurnummer:";
             // 
             // uxSplitter
             // 
             this.uxSplitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uxSplitter.Location = new System.Drawing.Point(21, 39);
-            this.uxSplitter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxSplitter.Location = new System.Drawing.Point(16, 32);
             this.uxSplitter.Name = "uxSplitter";
-            this.uxSplitter.Size = new System.Drawing.Size(937, 2);
+            this.uxSplitter.Size = new System.Drawing.Size(703, 2);
             this.uxSplitter.TabIndex = 6;
             // 
             // tabCategories
             // 
-            this.tabCategories.Location = new System.Drawing.Point(21, 54);
-            this.tabCategories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCategories.Location = new System.Drawing.Point(16, 44);
             this.tabCategories.Name = "tabCategories";
             this.tabCategories.SelectedIndex = 0;
-            this.tabCategories.Size = new System.Drawing.Size(937, 341);
+            this.tabCategories.Size = new System.Drawing.Size(703, 277);
             this.tabCategories.TabIndex = 7;
             // 
             // uxInvoiceNumber
             // 
-            this.uxInvoiceNumber.Location = new System.Drawing.Point(578, 6);
+            this.uxInvoiceNumber.Location = new System.Drawing.Point(434, 5);
+            this.uxInvoiceNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxInvoiceNumber.Name = "uxInvoiceNumber";
-            this.uxInvoiceNumber.Size = new System.Drawing.Size(177, 22);
+            this.uxInvoiceNumber.Size = new System.Drawing.Size(103, 20);
             this.uxInvoiceNumber.TabIndex = 8;
             this.uxInvoiceNumber.TextChanged += new System.EventHandler(this.uxInvoiceNumber_TextChanged_1);
             // 
-            // uxInvoiceNumberIgnore
+            // uxTotalInvoiceAmount
             // 
-            this.uxInvoiceNumberIgnore.AutoSize = true;
-            this.uxInvoiceNumberIgnore.Location = new System.Drawing.Point(761, 8);
-            this.uxInvoiceNumberIgnore.Name = "uxInvoiceNumberIgnore";
-            this.uxInvoiceNumberIgnore.Size = new System.Drawing.Size(186, 21);
-            this.uxInvoiceNumberIgnore.TabIndex = 9;
-            this.uxInvoiceNumberIgnore.Text = "Ik vul dit later manueel in";
-            this.uxInvoiceNumberIgnore.UseVisualStyleBackColor = true;
-            this.uxInvoiceNumberIgnore.CheckedChanged += new System.EventHandler(this.uxInvoiceNumberIgnore_CheckedChanged);
+            this.uxTotalInvoiceAmount.Location = new System.Drawing.Point(628, 4);
+            this.uxTotalInvoiceAmount.Margin = new System.Windows.Forms.Padding(2);
+            this.uxTotalInvoiceAmount.Name = "uxTotalInvoiceAmount";
+            this.uxTotalInvoiceAmount.Size = new System.Drawing.Size(91, 20);
+            this.uxTotalInvoiceAmount.TabIndex = 10;
+            this.uxTotalInvoiceAmount.TextChanged += new System.EventHandler(this.uxTotalInvoiceAmount_TextChanged);
+            // 
+            // uxTotalInvoiceAmountLabel
+            // 
+            this.uxTotalInvoiceAmountLabel.AutoSize = true;
+            this.uxTotalInvoiceAmountLabel.Location = new System.Drawing.Point(550, 8);
+            this.uxTotalInvoiceAmountLabel.Name = "uxTotalInvoiceAmountLabel";
+            this.uxTotalInvoiceAmountLabel.Size = new System.Drawing.Size(73, 13);
+            this.uxTotalInvoiceAmountLabel.TabIndex = 9;
+            this.uxTotalInvoiceAmountLabel.Text = "Totaalbedrag;";
             // 
             // CalculationReportControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.uxInvoiceNumberIgnore);
+            this.Controls.Add(this.uxTotalInvoiceAmount);
+            this.Controls.Add(this.uxTotalInvoiceAmountLabel);
             this.Controls.Add(this.uxInvoiceNumber);
             this.Controls.Add(this.tabCategories);
             this.Controls.Add(this.uxSplitter);
@@ -139,11 +142,10 @@
             this.Controls.Add(this.uxInvoiceDateLabel);
             this.Controls.Add(this.uxPeriod);
             this.Controls.Add(this.uxPeriodLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(980, 412);
-            this.MinimumSize = new System.Drawing.Size(980, 412);
+            this.MaximumSize = new System.Drawing.Size(735, 335);
+            this.MinimumSize = new System.Drawing.Size(735, 335);
             this.Name = "CalculationReportControl";
-            this.Size = new System.Drawing.Size(980, 412);
+            this.Size = new System.Drawing.Size(735, 335);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,6 +161,7 @@
         private System.Windows.Forms.Label uxSplitter;
         private System.Windows.Forms.TabControl tabCategories;
         private System.Windows.Forms.TextBox uxInvoiceNumber;
-        private System.Windows.Forms.CheckBox uxInvoiceNumberIgnore;
+        private System.Windows.Forms.TextBox uxTotalInvoiceAmount;
+        private System.Windows.Forms.Label uxTotalInvoiceAmountLabel;
     }
 }

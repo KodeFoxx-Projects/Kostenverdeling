@@ -43,12 +43,12 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
             uxProgressPanel.Visible = true;
 
             var previousReportSettingsInvoiceNumber = new Dictionary<string, string>();
-            var previousReportSettingsIgnoreInvoiceNumber = new Dictionary<string, bool>();
+            var previousReportSettingsOriginalInvoiceTotal = new Dictionary<string, string>();
             if (_controller.CalculationReports != null) {
                 foreach(var calculationReport in _controller.CalculationReports) {
                     var key = calculationReport.Department.Id.ToString();
                     previousReportSettingsInvoiceNumber.Add(key, calculationReport.InvoiceNumber);
-                    previousReportSettingsIgnoreInvoiceNumber.Add(key, calculationReport.IgnoreInvoiceNumber);
+                    previousReportSettingsOriginalInvoiceTotal.Add(key, calculationReport.OriginalInvoiceTotal);
                 }
             }
 
@@ -58,7 +58,7 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
                 foreach(var report in reports) {
                     var key = report.Department.Id.ToString();
                     report.InvoiceNumber = previousReportSettingsInvoiceNumber[key];
-                    report.IgnoreInvoiceNumber = previousReportSettingsIgnoreInvoiceNumber[key];
+                    report.OriginalInvoiceTotal = previousReportSettingsOriginalInvoiceTotal[key];
                 }
             }
             _controller.CalculationReports = reports;

@@ -74,7 +74,7 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
                     var path = Path.Combine(
                                 folderBrowserDialog.SelectedPath,
                                 "exports",
-                                $"export_{DateTime.UtcNow.ToString("yyyyMMdd_HHmmss")}{(String.IsNullOrWhiteSpace(user) ? "" : $"_{user.ToLower()}")}");
+                                $"{DateTime.UtcNow.ToString("yyyyMMdd_HHmmss")}{(String.IsNullOrWhiteSpace(user) ? "" : $"_{user.ToLower()}")}");
                     if (!Directory.Exists(path)) {
                         Directory.CreateDirectory(path);
                     }
@@ -159,11 +159,7 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
                     dialog.AppendText(Environment.NewLine);
                     dialog.AppendText($"   b) 'Beheer speciale werken' moet nog manueel aangepast worden in de output.");
                     dialog.AppendText(Environment.NewLine);
-                    dialog.AppendText($"   c) 'RSZ provisie' moet nog manueel aangepast worden in de output.");                    
-                    if (calculationReport.IgnoreInvoiceNumber) {
-                        dialog.AppendText(Environment.NewLine);
-                        dialog.AppendText($"   d) Factuurnummer moet nog manueel worden invgevuld.");
-                    }
+                    dialog.AppendText($"   c) 'RSZ provisie' moet nog manueel aangepast worden in de output.");
                     dialog.AppendText(Environment.NewLine);
                     dialog.AppendText(Environment.NewLine);
                     counter++;

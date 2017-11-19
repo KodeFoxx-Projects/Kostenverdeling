@@ -23,8 +23,7 @@ namespace Kostenverdeling.Model.Calculation
                     Department = department,
                     StartDate = _import.StartDateCorrection,
                     EndDate = _import.EndDateCorrection,
-                    InvoiceDate = _import.SelectedInvoiceDate,
-                    InvoiceNumber = "-",
+                    InvoiceDate = _import.SelectedInvoiceDate,                    
                     SubReports = new List<CalculationSubReport>()
                 };
                 calculationReports.Add(calculationReport);

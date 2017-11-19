@@ -45,11 +45,10 @@
             // 
             // uxExcelFile
             // 
-            this.uxExcelFile.Location = new System.Drawing.Point(20, 64);
-            this.uxExcelFile.Margin = new System.Windows.Forms.Padding(4);
+            this.uxExcelFile.Location = new System.Drawing.Point(15, 52);
             this.uxExcelFile.Name = "uxExcelFile";
             this.uxExcelFile.ReadOnly = true;
-            this.uxExcelFile.Size = new System.Drawing.Size(960, 22);
+            this.uxExcelFile.Size = new System.Drawing.Size(721, 20);
             this.uxExcelFile.TabIndex = 8;
             this.uxExcelFile.Text = "(geen locatie (map) geselecteerd)";
             // 
@@ -57,19 +56,17 @@
             // 
             this.uxExcelFileLabel.AutoSize = true;
             this.uxExcelFileLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExcelFileLabel.Location = new System.Drawing.Point(4, 44);
-            this.uxExcelFileLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxExcelFileLabel.Location = new System.Drawing.Point(3, 36);
             this.uxExcelFileLabel.Name = "uxExcelFileLabel";
-            this.uxExcelFileLabel.Size = new System.Drawing.Size(201, 17);
+            this.uxExcelFileLabel.Size = new System.Drawing.Size(159, 13);
             this.uxExcelFileLabel.TabIndex = 7;
             this.uxExcelFileLabel.Text = "Locatie EXCEL bestanden:";
             // 
             // uxInfo
             // 
             this.uxInfo.Location = new System.Drawing.Point(0, 0);
-            this.uxInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.uxInfo.Name = "uxInfo";
-            this.uxInfo.Size = new System.Drawing.Size(1000, 36);
+            this.uxInfo.Size = new System.Drawing.Size(750, 29);
             this.uxInfo.TabIndex = 6;
             this.uxInfo.Text = "Selecteer de locatie (map) waarin je de EXCEL bestanden wilt opslaan. Na de selec" +
     "tie zal het programma de bestanden genereren en je verwittigen wanneer het expor" +
@@ -77,10 +74,9 @@
             // 
             // uxBrowseExcelFile
             // 
-            this.uxBrowseExcelFile.Location = new System.Drawing.Point(880, 94);
-            this.uxBrowseExcelFile.Margin = new System.Windows.Forms.Padding(4);
+            this.uxBrowseExcelFile.Location = new System.Drawing.Point(660, 76);
             this.uxBrowseExcelFile.Name = "uxBrowseExcelFile";
-            this.uxBrowseExcelFile.Size = new System.Drawing.Size(100, 28);
+            this.uxBrowseExcelFile.Size = new System.Drawing.Size(75, 23);
             this.uxBrowseExcelFile.TabIndex = 9;
             this.uxBrowseExcelFile.Text = "Bladeren...";
             this.uxBrowseExcelFile.UseVisualStyleBackColor = true;
@@ -91,39 +87,35 @@
             this.uxBusyPanel.Controls.Add(this.uxProgressInfo);
             this.uxBusyPanel.Controls.Add(this.uxProgressBar);
             this.uxBusyPanel.Controls.Add(this.uxBezigMetVerwerkenGegevens);
-            this.uxBusyPanel.Location = new System.Drawing.Point(8, 132);
-            this.uxBusyPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.uxBusyPanel.Location = new System.Drawing.Point(6, 107);
             this.uxBusyPanel.Name = "uxBusyPanel";
-            this.uxBusyPanel.Size = new System.Drawing.Size(988, 89);
+            this.uxBusyPanel.Size = new System.Drawing.Size(741, 72);
             this.uxBusyPanel.TabIndex = 10;
             this.uxBusyPanel.Visible = false;
             // 
             // uxProgressInfo
             // 
             this.uxProgressInfo.AutoSize = true;
-            this.uxProgressInfo.Location = new System.Drawing.Point(9, 20);
-            this.uxProgressInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxProgressInfo.Location = new System.Drawing.Point(7, 16);
             this.uxProgressInfo.Name = "uxProgressInfo";
-            this.uxProgressInfo.Size = new System.Drawing.Size(361, 17);
+            this.uxProgressInfo.Size = new System.Drawing.Size(271, 13);
             this.uxProgressInfo.TabIndex = 13;
             this.uxProgressInfo.Text = "Bezig met exporteren van de berekeningen naar EXCEL";
             // 
             // uxProgressBar
             // 
-            this.uxProgressBar.Location = new System.Drawing.Point(12, 41);
-            this.uxProgressBar.Margin = new System.Windows.Forms.Padding(4);
+            this.uxProgressBar.Location = new System.Drawing.Point(9, 33);
             this.uxProgressBar.Name = "uxProgressBar";
-            this.uxProgressBar.Size = new System.Drawing.Size(961, 28);
+            this.uxProgressBar.Size = new System.Drawing.Size(721, 23);
             this.uxProgressBar.TabIndex = 12;
             // 
             // uxBezigMetVerwerkenGegevens
             // 
             this.uxBezigMetVerwerkenGegevens.AutoSize = true;
             this.uxBezigMetVerwerkenGegevens.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBezigMetVerwerkenGegevens.Location = new System.Drawing.Point(-3, 0);
-            this.uxBezigMetVerwerkenGegevens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxBezigMetVerwerkenGegevens.Location = new System.Drawing.Point(-2, 0);
             this.uxBezigMetVerwerkenGegevens.Name = "uxBezigMetVerwerkenGegevens";
-            this.uxBezigMetVerwerkenGegevens.Size = new System.Drawing.Size(450, 17);
+            this.uxBezigMetVerwerkenGegevens.Size = new System.Drawing.Size(352, 13);
             this.uxBezigMetVerwerkenGegevens.TabIndex = 6;
             this.uxBezigMetVerwerkenGegevens.Text = "Bezig met exporteren naar EXCEL bestanden. Even geduld...";
             // 
@@ -133,29 +125,27 @@
             this.uxOkPanel.Controls.Add(this.uxOpenExportFolder);
             this.uxOkPanel.Controls.Add(this.uxOkInfoText);
             this.uxOkPanel.Controls.Add(this.uxOkInfo);
-            this.uxOkPanel.Location = new System.Drawing.Point(8, 229);
-            this.uxOkPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.uxOkPanel.Location = new System.Drawing.Point(6, 186);
             this.uxOkPanel.Name = "uxOkPanel";
-            this.uxOkPanel.Size = new System.Drawing.Size(988, 259);
+            this.uxOkPanel.Size = new System.Drawing.Size(741, 210);
             this.uxOkPanel.TabIndex = 11;
             this.uxOkPanel.Visible = false;
             // 
             // uxExportAgain
             // 
-            this.uxExportAgain.Location = new System.Drawing.Point(621, 75);
-            this.uxExportAgain.Margin = new System.Windows.Forms.Padding(4);
+            this.uxExportAgain.Location = new System.Drawing.Point(466, 61);
             this.uxExportAgain.Name = "uxExportAgain";
-            this.uxExportAgain.Size = new System.Drawing.Size(172, 28);
+            this.uxExportAgain.Size = new System.Drawing.Size(129, 23);
             this.uxExportAgain.TabIndex = 15;
             this.uxExportAgain.Text = "Opnieuw exporteren...";
             this.uxExportAgain.UseVisualStyleBackColor = true;
+            this.uxExportAgain.Visible = false;
             // 
             // uxOpenExportFolder
             // 
-            this.uxOpenExportFolder.Location = new System.Drawing.Point(800, 75);
-            this.uxOpenExportFolder.Margin = new System.Windows.Forms.Padding(4);
+            this.uxOpenExportFolder.Location = new System.Drawing.Point(600, 61);
             this.uxOpenExportFolder.Name = "uxOpenExportFolder";
-            this.uxOpenExportFolder.Size = new System.Drawing.Size(172, 28);
+            this.uxOpenExportFolder.Size = new System.Drawing.Size(129, 23);
             this.uxOpenExportFolder.TabIndex = 14;
             this.uxOpenExportFolder.Text = "Export map openen...";
             this.uxOpenExportFolder.UseVisualStyleBackColor = true;
@@ -164,11 +154,10 @@
             // uxOkInfoText
             // 
             this.uxOkInfoText.AutoSize = true;
-            this.uxOkInfoText.Location = new System.Drawing.Point(9, 20);
-            this.uxOkInfoText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.uxOkInfoText.MaximumSize = new System.Drawing.Size(963, 0);
+            this.uxOkInfoText.Location = new System.Drawing.Point(7, 16);
+            this.uxOkInfoText.MaximumSize = new System.Drawing.Size(722, 0);
             this.uxOkInfoText.Name = "uxOkInfoText";
-            this.uxOkInfoText.Size = new System.Drawing.Size(956, 51);
+            this.uxOkInfoText.Size = new System.Drawing.Size(717, 39);
             this.uxOkInfoText.TabIndex = 13;
             this.uxOkInfoText.Text = resources.GetString("uxOkInfoText.Text");
             // 
@@ -176,16 +165,15 @@
             // 
             this.uxOkInfo.AutoSize = true;
             this.uxOkInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxOkInfo.Location = new System.Drawing.Point(-3, 0);
-            this.uxOkInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxOkInfo.Location = new System.Drawing.Point(-2, 0);
             this.uxOkInfo.Name = "uxOkInfo";
-            this.uxOkInfo.Size = new System.Drawing.Size(154, 17);
+            this.uxOkInfo.Size = new System.Drawing.Size(121, 13);
             this.uxOkInfo.TabIndex = 6;
             this.uxOkInfo.Text = "Exporteren voltooid.";
             // 
             // ImportWizardStep04_ExportToExcel_View
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.uxOkPanel);
             this.Controls.Add(this.uxBusyPanel);
@@ -193,10 +181,11 @@
             this.Controls.Add(this.uxExcelFile);
             this.Controls.Add(this.uxExcelFileLabel);
             this.Controls.Add(this.uxInfo);
-            this.MaximumSize = new System.Drawing.Size(1000, 492);
-            this.MinimumSize = new System.Drawing.Size(1000, 492);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(750, 400);
+            this.MinimumSize = new System.Drawing.Size(750, 400);
             this.Name = "ImportWizardStep04_ExportToExcel_View";
-            this.Size = new System.Drawing.Size(1000, 492);
+            this.Size = new System.Drawing.Size(750, 400);
             this.uxBusyPanel.ResumeLayout(false);
             this.uxBusyPanel.PerformLayout();
             this.uxOkPanel.ResumeLayout(false);

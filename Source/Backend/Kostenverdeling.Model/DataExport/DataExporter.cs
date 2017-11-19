@@ -12,6 +12,7 @@ using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using Kostenverdeling.Model.Common;
 using Kostenverdeling.Model.Settings;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.RefAndLookup;
 
 namespace Kostenverdeling.Model.DataExport
 {
@@ -60,10 +61,10 @@ namespace Kostenverdeling.Model.DataExport
             double current = 1;
 
             foreach (var department in divisions.Select(d => d.Department).Distinct()) {
-
-                var documentName = Path.Combine(Directory.FullName, $"VERDELING_FACTUUR-{department.Id}-{department.Name}.xlsx");
+                
                 var categories = CalculationReports.Where(cr => cr.Department.Id == department.Id).SelectMany(cr => cr.SubReports).Where(sr => sr.Division.Department.Id == department.Id && sr.IncludeInExcelReport).Select(csr => csr.Category).Distinct();
                 var reports = CalculationReports.Where(cr => cr.Department.Id == department.Id).ToList();
+                var documentName = Path.Combine(Directory.FullName, $"VERDELING_FACTUUR-{reports[0].InvoiceNumber}-{department.Id}-{department.Name}.xlsx");
                 var totalLines = 0;
 
                 if (reports != null && reports.Count != 0) {
@@ -71,7 +72,7 @@ namespace Kostenverdeling.Model.DataExport
                     /* OVERZICHT EXCELS */
                     using (var xl = new ExcelPackage(new FileInfo(documentName))) {
 
-                        var worksheetName = $"VERDELING_FACTUUR-{department.Id}-{department.Name}";
+                        var worksheetName = $"VERDELING_FACTUUR-{reports[0].InvoiceNumber}-{department.Id}-{department.Name}";
                         var ws = xl.Workbook.Worksheets.Add(worksheetName);
                         var categoryHeaders = new List<int>();
                         xl.Save();
@@ -104,7 +105,7 @@ namespace Kostenverdeling.Model.DataExport
                         ws.Cells["C3"].Value = "Factuurdatum";
                         ws.Cells["D3"].Value = reports[0].InvoiceDate.ToShortDateString();
                         ws.Cells["C4"].Value = "FactuurNummer";
-                        ws.Cells["D4"].Value = reports[0].IgnoreInvoiceNumber ? "(nog manueel in te vullen)" : reports[0].InvoiceNumber.ToString();
+                        ws.Cells["D4"].Value = reports[0].InvoiceNumber.ToString();
                         // HEADER save
                         xl.Save();
 
@@ -245,7 +246,21 @@ namespace Kostenverdeling.Model.DataExport
                         ws.Cells[$"C{lineCounter}"].Style.VerticalAlignment = ExcelVerticalAlignment.Bottom;
                         ws.Cells[$"C{lineCounter}"].Value = "Factuur Bedrag voor de Controle";
                         ws.Cells[$"C{lineCounter}:E{lineCounter}"].Style.Font.Bold = true;
+                        ws.Cells[$"E{lineCounter}"].Value = Double.Parse(reports[0].OriginalInvoiceTotal);
                         ws.Cells[$"E{lineCounter}"].Style.Numberformat.Format = "#,##0.00";
+
+                        // TOTAAL Controle Red or Green Conditional Rules
+                        var rangeToCompare = ws.Cells[$"E{lineCounter}"];
+                        // ENFORCE RULES
+                        var equalRule = ws.ConditionalFormatting.AddEqual(rangeToCompare);
+                        equalRule.Formula = $"=E{lineCounter - 1}";
+                        equalRule.Style.Fill.BackgroundColor.Color = Color.LawnGreen;
+                        var notEqualRule = ws.ConditionalFormatting.AddNotEqual(rangeToCompare);
+                        notEqualRule.Formula = $"=E{lineCounter - 1}";
+                        notEqualRule.Style.Fill.BackgroundColor.Color = Color.Salmon;
+
+
+                        // Up line count
                         lineCounter++;
 
                         // AUTOFIT & Save 
@@ -275,6 +290,8 @@ namespace Kostenverdeling.Model.DataExport
                                 ws.Cells[row, col].Style.Border.BorderAround(ExcelBorderStyle.Thin);
                             }
                         }
+
+                        
                         xl.Save();
                     }
                 }

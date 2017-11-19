@@ -38,22 +38,33 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Common
             }
         }
 
-        public string InvoiceNumber { get { return uxInvoiceNumber.Text; } }
-        public bool InvoiceNumberIgnore { get { return uxInvoiceNumberIgnore.Checked; } }
+        public string InvoiceNumber { get { return uxInvoiceNumber.Text; } }        
 
-        private bool ValidateState() {
-            if(uxInvoiceNumberIgnore.Checked) {
-                RaiseIsValid();
-                return true;
-            }
-
+        private bool ValidateState() {            
             if (String.IsNullOrWhiteSpace(uxInvoiceNumber.Text)) {
-                RaiseIsInValid();
+                RaiseIsInValid();                
                 return false;
             }
 
-            if(uxInvoiceNumber.Text.Trim().Count() == 1) {
-                RaiseIsInValid();
+            if(!uxInvoiceNumber.Text.Trim().Any() || uxInvoiceNumber.Text == "-") {
+                RaiseIsInValid();                
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(uxTotalInvoiceAmount.Text))
+            {
+                RaiseIsInValid();                
+                return false;
+            }
+
+            if (!uxTotalInvoiceAmount.Text.Trim().Any()) {
+                RaiseIsInValid();                
+                return false;
+            }
+
+            if (!Double.TryParse(uxTotalInvoiceAmount.Text.Replace(".", ","), out var result))
+            {
+                RaiseIsInValid();                
                 return false;
             }
 
@@ -71,8 +82,7 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Common
 
             uxPeriod.Text = $"{_report.StartDate.ToString("dd/MM/yyyy")} - {_report.EndDate.ToString("dd/MM/yyyy")}";
             uxInvoiceDate.Text = _report.InvoiceDate.ToString("dd/MM/yyyy");
-            uxInvoiceNumber.Text = _report.InvoiceNumber;
-            uxInvoiceNumberIgnore.Checked = _report.IgnoreInvoiceNumber;
+            uxInvoiceNumber.Text = _report.InvoiceNumber;            
 
             var categories = report.SubReports.Select(sr => sr.Category).Distinct();
             foreach(var category in categories) {
@@ -82,16 +92,15 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Common
                 categoryTabPage.Controls.Add(subReportControl);
                 tabCategories.TabPages.Add(categoryTabPage);
             }
-        }
-
-        private void uxInvoiceNumberIgnore_CheckedChanged(object sender, EventArgs e) {
-            uxInvoiceNumber.Enabled = !uxInvoiceNumberIgnore.Checked;
-            _report.IgnoreInvoiceNumber = uxInvoiceNumberIgnore.Checked;
-            ValidateState();
-        }
+        }        
 
         private void uxInvoiceNumber_TextChanged_1(object sender, EventArgs e) {
             _report.InvoiceNumber = uxInvoiceNumber.Text;
+            ValidateState();
+        }
+
+        private void uxTotalInvoiceAmount_TextChanged(object sender, EventArgs e) {
+            _report.OriginalInvoiceTotal = uxTotalInvoiceAmount.Text;
             ValidateState();
         }
     }
