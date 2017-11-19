@@ -189,6 +189,7 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
                     }
                 }
             }
+            uxDepartmentsAndDivisions.ExpandAll();
         }
 
         private void _bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e) {
@@ -264,25 +265,25 @@ namespace Kostenverdeling.Desktop.WinFormsClient.Wizard.ImportWizard
         }
 
         private void uxToggleIgnoreIncludeDepartmentsAndDivisions_Click(object sender, EventArgs e) {
-            var selectedNode = uxDepartmentsAndDivisions.SelectedNode;
-            if(selectedNode != null) {
-                if(selectedNode.Level == 0) {
-                    // Dept
-                    var department = _result.DepartmentRepository.GetDepartment(Int32.Parse(selectedNode.Tag.ToString()));
-                    department.CanIgnore = !department.CanIgnore;
-                    foreach(var division in department.Divisions) {
-                        division.CanIgnore = !division.CanIgnore;
-                    }
-                }
-                if(selectedNode.Level == 1) {
-                    // Div
-                    var department = _result.DepartmentRepository.GetDepartment(Int32.Parse(selectedNode.Parent.Tag.ToString()));
-                    var division = _result.DepartmentRepository.GetDivision(Int32.Parse(selectedNode.Tag.ToString()), department);
-                    division.CanIgnore = !division.CanIgnore;
-                }
-            }
+            //var selectedNode = uxDepartmentsAndDivisions.SelectedNode;
+            //if(selectedNode != null) {
+            //    if(selectedNode.Level == 0) {
+            //        // Dept
+            //        var department = _result.DepartmentRepository.GetDepartment(Int32.Parse(selectedNode.Tag.ToString()));
+            //        department.CanIgnore = !department.CanIgnore;
+            //        foreach(var division in department.Divisions) {
+            //            division.CanIgnore = !division.CanIgnore;
+            //        }
+            //    }
+            //    if(selectedNode.Level == 1) {
+            //        // Div
+            //        var department = _result.DepartmentRepository.GetDepartment(Int32.Parse(selectedNode.Parent.Tag.ToString()));
+            //        var division = _result.DepartmentRepository.GetDivision(Int32.Parse(selectedNode.Tag.ToString()), department);
+            //        division.CanIgnore = !division.CanIgnore;
+            //    }
+            //}
 
-            RefreshDepartmentsAndDivisions();
+            //RefreshDepartmentsAndDivisions();
         }
 
         private void uxStartDateInvoice_ValueChanged(object sender, EventArgs e) {

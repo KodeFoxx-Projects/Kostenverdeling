@@ -120,9 +120,6 @@
   <data name="uxInfo.Text" xml:space="preserve">
     <value>Selecteer het EXCEL bestand van de E-Blox export met de knop "Bladeren". Het programma zal daarna het EXCEL bestand verwerken zodat u kan zien met welke gegevens u werkt. Indien de gegevens niet correct zijn kan je steeds een ander EXCEL bestand selecteren.</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Selecteer een bedrijf of project en klik daarna met de rechtermuis om het uitklapmenu te tonen. Druk op "Negeren / Meenemen" om een project mee te nemen in de bereking of niet. Wanneer u klaar bent met de configuratie kan u naar de volgende stap gaan.</value>
-  </data>
   <metadata name="uxDepartmentsAndDivisionsMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
