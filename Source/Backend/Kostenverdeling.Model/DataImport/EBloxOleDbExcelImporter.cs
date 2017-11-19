@@ -52,7 +52,8 @@ namespace Kostenverdeling.Model.DataImport
                 InvoiceSimulationSettings = _invoiceSimulationSettingsLoader.Load(),
                 DepartmentRepository = _businessDepartmentRepository,
                 EmployeeRepository = _employeeRepository,
-                CostCategoryRepository = _costCategoryRepository
+                CostCategoryRepository = _costCategoryRepository,
+                OriginalImportFile = source
             };
         }
 

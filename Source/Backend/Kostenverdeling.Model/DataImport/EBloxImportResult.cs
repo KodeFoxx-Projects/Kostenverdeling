@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.IO;
 using Kostenverdeling.Model.Common;
 using Kostenverdeling.Model.Settings;
 using Kostenverdeling.Model.InvoiceSimulation;
@@ -11,6 +12,8 @@ namespace Kostenverdeling.Model.DataImport
 
         public EBloxImportResult() {
         }
+
+        public FileInfo OriginalImportFile { get; internal set; }
 
         public EBloxImportOptions ImportOptions { get; internal set; }
         public CalculationSettings CalculationSettings { get; internal set; }

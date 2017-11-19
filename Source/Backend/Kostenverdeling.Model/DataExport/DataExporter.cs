@@ -386,6 +386,13 @@ namespace Kostenverdeling.Model.DataExport
                         }
                         _backgroundWorker.ReportProgress(Convert.ToInt32(95), $"Opslaan EXCEL bestand...");
                         xl.Save();
+
+                        _backgroundWorker.ReportProgress(Convert.ToInt32(97), $"Kopiëren origineel EXCEL importbestand...");
+                        try {
+                            ImportResult.OriginalImportFile.CopyTo(Path.Combine(ExportDirectory.FullName,
+                                ImportResult.OriginalImportFile.Name));
+                        } catch(Exception ex) { }
+
                         _backgroundWorker.ReportProgress(Convert.ToInt32(100), $"Opslaan EXCEL bestand...");
                     }
                 }
