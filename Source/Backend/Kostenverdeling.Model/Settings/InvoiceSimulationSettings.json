@@ -4,10 +4,11 @@
       "Name": "Sociale bijdragen en inhoudingen",
       "InvoiceSectionLines": [
         {
-          "Description": "R.S.Z (KODES 250, 280, 501, 502, 588, 589)",
+          "Description": "R.S.Z (KODES 250, 257, 280, 501, 502, 588, 589)",
           "InvoiceCode": "250",
           "CodesToInclude": [
             "250*",
+            "257*",
             "280*",
             "501*",
             "502*",
