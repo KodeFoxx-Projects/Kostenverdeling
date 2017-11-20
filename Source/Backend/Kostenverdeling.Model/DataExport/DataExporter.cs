@@ -8,6 +8,7 @@ using System.Text;
 using System.Linq;
 using System;
 using System.Drawing;
+using System.Net.Mime;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using Kostenverdeling.Model.Common;
@@ -245,8 +246,8 @@ namespace Kostenverdeling.Model.DataExport
                         ws.Cells[$"C{lineCounter}"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
                         ws.Cells[$"C{lineCounter}"].Style.VerticalAlignment = ExcelVerticalAlignment.Bottom;
                         ws.Cells[$"C{lineCounter}"].Value = "Factuur Bedrag voor de Controle";
-                        ws.Cells[$"C{lineCounter}:E{lineCounter}"].Style.Font.Bold = true;
-                        ws.Cells[$"E{lineCounter}"].Value = Double.Parse(reports[0].OriginalInvoiceTotal);
+                        ws.Cells[$"C{lineCounter}:E{lineCounter}"].Style.Font.Bold = true;                        
+                        ws.Cells[$"E{lineCounter}"].Value = Double.Parse(reports[0].OriginalInvoiceTotal.Trim().Replace(".", ","));
                         ws.Cells[$"E{lineCounter}"].Style.Numberformat.Format = "#,##0.00";
 
                         // TOTAAL Controle Red or Green Conditional Rules
